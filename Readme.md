@@ -79,7 +79,7 @@ This tells you **exactly** which dependencies are declared but never used.
 No heuristics. No guesses. Just static analysis.
 
 ---
-## Limitations (v1)
+### Limitations (v1)
 
 This version intentionally keeps scope limited:
 
@@ -90,10 +90,16 @@ This version intentionally keeps scope limited:
 -   Does **not** handle dynamic imports (`import()` with variables)
     
 -   No config file support yet
+
+-  Path aliases (@/) are treated as external imports
+
+-  Framework-managed dependencies (e.g. react-dom in Next.js) may appear as unused
+
+-  CLI tools installed as dependencies may appear unused
     
 These are planned improvements.
 
----## Planned features (future versions)
+## Planned features (future versions)
 
 -   🔜 `devDependencies` audit
     

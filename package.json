@@ -1,6 +1,6 @@
 {
   "name": "dep-peek",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Peek into your project to find unused dependencies.",
   "bin": {
     "dep-peek": "bin/dep-peek.js"
